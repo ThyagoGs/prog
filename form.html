@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+    <style>
+        /* Resetando algumas propriedades padrão */
+        body,
+        h1,
+        p,
+        label,
+        input,
+        textarea,
+        select {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        label {
+            font-size: 16px;
+            margin-right: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para inputs de radio e checkbox */
+        .radio-group,
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+
+        .checkbox-group label,
+        .radio-group label {
+            font-size: 16px;
+            color: #333;
+        }
+
+        body {
+            background-image: url(https://image.freepik.com/vetores-gratis/fundo-de-formularios-sobrepostos_23-2148649125.jpg);
+            background-size: cover;
+            background-position: no-repeat;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="index.html" method="post">
+            <h1>Cadastrar usuário</h1>
+            <p>Dados Pessoais</p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="password">Senha:</label>
+            <input type="password" id="pwd" name="senha" minlength="8">
+
+            <label for="Confirmar Senha">Confirmar Senha:</label>
+            <input type="password" id="pwdConfirm" name="Confirmar Senha" minlength="8">
+
+            <p>Idade:</p>
+            <div class="radio-group">
+                <input type="radio" id="Acima de 17" name="idade" value="Acima de 17">
+                <label for="Acima de 17">Acima de 17</label>
+
+                <input type="radio" id="Abaixo de 17" name="idade" value="Abaixo de 17">
+                <label for="Abaixo de 17">Abaixo ou igual a 17</label>
+            </div>
+
+            <p>Perfil:</p>
+            <label for="w3review">Descrição:</label>
+            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+
+            <label for="perfil">Perfil Trabalho:</label>
+            <select name="perfil" id="perfil">
+                <option value="Engenheiro">Engenheiro</option>
+                <option value="Fisico">Físico</option>
+                <option value="Quimico">Químico</option>
+            </select>
+
+            <p>Área de interesse</p>
+            <div class="checkbox-group">
+                <input type="checkbox" id="Engenheiro" name="Engenheiro" value="Engenheiro">
+                <label for="Engenheiro">Engenheiro</label>
+
+                <input type="checkbox" id="Fisico" name="Fisico" value="Fisico">
+                <label for="Fisico">Físico</label>
+
+                <input type="checkbox" id="Quimico" name="Quimico" value="Quimico">
+                <label for="Quimico">Químico</label>
+            </div>
+
+            <input type="button" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
