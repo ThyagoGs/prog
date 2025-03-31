@@ -1,0 +1,37 @@
+#nome {
+    text-align: center;
+    color: hsl(253, 80%, 45%);
+}
+#foto {
+    text-align: center;
+}
+.redeSocial{
+    background-color: aquamarine;
+}
+.minhadiv{
+    background-color: rgb(121, 120, 120);
+    text-align: center;
+    border:1px dashed black;
+    
+}
+.fundo{
+    background-color: rgba(240, 248, 255, 0.13);
+}
+.titulo2{
+    background-color: rgb(17, 128, 50);
+    transition: background-color 1.5s ease, transform 1.5s ease;
+}
+.titulo2:hover{
+    background-color: aqua;
+    transform: scale(1.1);
+}
+h{font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+p{font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+ol{
+    list-style-type:upper-alpha;
+}
+
