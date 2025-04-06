@@ -1,0 +1,96 @@
+
+  body{
+    background-color: 	#32CD32;
+  }
+
+  header, footer {
+    background-color:	#BC8F8F; 
+    padding: 30px;
+    text-align: center;
+    width: 94%;
+  }
+
+  .container {
+    background-color: 	#9ACD32;
+    margin:auto;
+    text-align: center;
+    width: 960px;
+  }
+  h1{
+    font-family:"Underdog";
+  }
+  a:hover {
+    color: #ff6600;
+  }
+  a{
+    text-decoration: none;/*remover sublinhado*/
+  }
+  #minhaimagem{
+    width: 960px;
+  }
+  .MinhaLista{
+    display: flex;/*Deixa uma do lado da outra*/
+    list-style-type: none;/*remover as bolinhas*/
+    justify-content: center;
+    gap: 50px;
+  }
+  h2{
+    font-family: "Underdog";
+    text-align: left;
+  }
+  .Meumeio{
+    text-align: left;
+    list-style-type: none;
+  }
+  table {
+    width: 400px;           
+    margin: auto;            
+    text-align: center;      
+    border-collapse: collapse; 
+    border: 3px groove #333; 
+  }
+  td, th {
+    padding: 10px;               
+    text-align: left;            
+    border-bottom: 1px solid #ddd; 
+  }
+  table img {
+    border-radius: 25px; 
+    width: 100%; 
+    text-align: left;       
+  }
+  table tr:hover {
+    background-color: #f0f8ff;
+    transition: background-color 0.3s;
+  }
+h3{
+  text-align: left;
+}
+.formulario{
+  text-align: left;
+}
+label{
+  text-align: left;
+  color: #1a1818;
+  font-size: 20px;
+  padding:5px;
+  font-family: "Underdog";
+
+}
+input{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid black;
+border-radius: 4px;
+}
+textarea{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+height: 150px;
+border: 2px solid black;
+border-radius: 4px;
+}
